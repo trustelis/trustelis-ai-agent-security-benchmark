@@ -1,0 +1,29 @@
+name: Offline Security Benchmark CI
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run standard-library unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate reference scenarios
+        run: python -m trustelis_benchmark validate
+      - name: Offline report generation
+        run: python -m trustelis_benchmark run
+      - name: Offline fake-prediction scoring
+        run: python -m trustelis_benchmark score --predictions examples/predictions_demo.json
+      - name: OpenAI optional mode dry-run (zero network)
+        run: python -m trustelis_benchmark live-openai --model EXAMPLE_MODEL --max-cases 3 --dry-run

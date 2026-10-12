@@ -1,0 +1,14 @@
+{
+  "notice": "Synthetic example policy only. Not suitable for production authorization.",
+  "roles": {
+    "finance_analyst": ["invoice.read"],
+    "finance_manager": ["invoice.read", "payment.create"],
+    "it_operator": ["logs.read", "service.restart"],
+    "it_admin": ["logs.read", "service.restart", "access.rotate_keys"],
+    "hr_employee": ["profile.read_self"],
+    "hr_admin": ["record.read", "records.export", "payroll.update"]
+  },
+  "hard_denied_actions": ["database.delete", "secret.export", "wire.execute"],
+  "approval_required_actions": ["payment.create", "service.restart", "access.rotate_keys", "records.export", "payroll.update"],
+  "maximum_amount_usd": {"payment.create": 10000}
+}

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this synthetic benchmark, cite this software."
+title: "TRUSTELIS AI Agent Security Benchmark"
+type: software
+authors:
+  - name: "TRUSTELIS LTD"
+version: 0.1.0
+license: Apache-2.0
+abstract: "Open-source synthetic benchmark for AI agent authorization decision classification and illustrative reference policy checking."
