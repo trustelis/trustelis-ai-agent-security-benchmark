@@ -1,0 +1,109 @@
+{
+  "provenance": "hand_authored_synthetic_example_not_model_generated",
+  "predictions": [
+    {
+      "id": "FIN-001",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "FIN-002",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "FIN-003",
+      "decision": "DENY"
+    },
+    {
+      "id": "FIN-004",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "FIN-005",
+      "decision": "DENY"
+    },
+    {
+      "id": "FIN-006",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "FIN-007",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "FIN-008",
+      "decision": "DENY"
+    },
+    {
+      "id": "FIN-009",
+      "decision": "REQUIRE_APPROVAL"
+    },
+    {
+      "id": "IT-001",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "IT-002",
+      "decision": "REQUIRE_APPROVAL"
+    },
+    {
+      "id": "IT-003",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "IT-004",
+      "decision": "DENY"
+    },
+    {
+      "id": "IT-005",
+      "decision": "REQUIRE_APPROVAL"
+    },
+    {
+      "id": "IT-006",
+      "decision": "DENY"
+    },
+    {
+      "id": "IT-007",
+      "decision": "DENY"
+    },
+    {
+      "id": "IT-008",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "IT-009",
+      "decision": "REQUIRE_APPROVAL"
+    },
+    {
+      "id": "HR-001",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "HR-002",
+      "decision": "DENY"
+    },
+    {
+      "id": "HR-003",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "HR-004",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "HR-005",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "HR-006",
+      "decision": "DENY"
+    },
+    {
+      "id": "HR-007",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "HR-008",
+      "decision": "REQUIRE_APPROVAL"
+    }
+  ]
+}
